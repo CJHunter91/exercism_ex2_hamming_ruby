@@ -1,3 +1,4 @@
+
 class Hamming
 
   def self.compute(strand1, strand2)
@@ -17,4 +18,8 @@ class Hamming
 
     return nucleotide_not_match
   end
+end
+
+module BookKeeping
+  VERSION = 3
 end
