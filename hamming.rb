@@ -8,7 +8,7 @@ class Hamming
     count = 0
     nucleotide_not_match = 0
     #compare each nucleotide in both arrays
-    for nucleotide in strand1.chars()
+    strand1.chars().each do |nucleotide|
       nucleotide_not_match += 1 if nucleotide != strand2.chars()[count]
       # use count to iterate and compare relative nucleotides  in each strand
       count += 1
